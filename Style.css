@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+.consigne1{
+  position: relative;
+  z-index: 100;
+  flex-wrap: wrap;
+  text-align: center;
+  top: 40px;
+  font-size: 33px;
+}
+
+ .text1{
+  position: relative;
+  top: 85px; 
+  font-size: 20px;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+
+
+.image2{
+  position: relative;
+  top: 90px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.image2 img {
+  margin-right: 30px;
+  margin-left: 30px;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+
+.image3{
+  position: relative;
+  top: 130px;
+  flex-wrap: wrap;
+}
+
+.column{
+ display: flex;
+  margin-top: 170px;
+  
+}
+
+.column .text2{
+  width: 250%;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-right: 30px;
+  margin-left: 10px;
+  margin: auto;
+}
+.column .image4{
+ 
+}
+
+@media(max-width: 1100px) {
+  .column{
+    display: block;
+     margin-top: 170px;
+     
+   }
+   .column .text2{
+    width: 100%;
+    flex-wrap: wrap;
+    
+  }
+  .column .image4{
+    text-align: center;
+    
+   flex-wrap: wrap;
+  }
+}
+
+.textphoto{
+  position: relative;
+  left: 100px;
+  bottom: 150px;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: auto;
+
+}
+
+.image5{
+  margin-top: 40px;
+  position: relative;
+}
+.image5  button{
+  color: white;
+  background-color: black;
+  font-size: 20px;
+  border: none;
+  z-index: 100;
+  width: 20%;
+}
+@media(max-width: 685px){
+  .textphoto{
+    position: relative;
+    left: 20px;
+    bottom: 10px;
+    width: 70%;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+  .image5  button{
+    
+    font-size: 10px;
+    
+  }
+}
+
+
+/* debut du footer */
+
+
+.footer {
+  top: 2px;
+  background-color: black;
+  padding: 70px 0;
+  position: relative;
+  z-index: 2;
+
+}
+
+footer p {
+  font-size: 13px;
+  margin-bottom: 0;
+  margin-top: 50px;
+  text-align: center;
+  color: white;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: seagreen;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+
+}
+
+.footer-col ul li a {
+
+  display: inline-block;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+
+}
+
+.footer-col ul li a:hover {
+  color: white;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgb(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: white;
+}
+
+.row {
+  display: flex;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+/*responsive*/
+@media(max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+
+@media(max-width: 430px) {
+  .footer-col .social-links a {
+    
+    height: 35px;
+    width: 30px;
+    
+  }
+  .footer-col h4 {
+    font-size: 14px;
+    
+  }
+  .footer-col h4::before {
+    
+    width: 30px;
+  }
+}
+
+/* fin du footer */
